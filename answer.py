@@ -25,7 +25,7 @@ def summation(lines: str) -> int:
 if __name__ == "__main__":
     # Get the filename from stdin
     filename = input()
-    print(filename)
+    #print(filename)
 
     # Open the file and read in its contents
     with open(filename) as data_file:
