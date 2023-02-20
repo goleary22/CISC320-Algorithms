@@ -9,13 +9,14 @@ def summation(lines: str) -> int:
     for line in lines:
         # translate to int values
         value = int(line)
+        #stops when encounter -999
         if(value == -999):
             break
         else:
-            if(value > 0):
+            if(value > 0): #only adds to sum if positive value
                 sum += value
                 index += 1
-    if(sum == 0):
+    if(sum == 0): #returns empty if there are no values
         return 'EMPTY'
     
 
