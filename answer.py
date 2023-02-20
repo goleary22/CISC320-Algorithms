@@ -4,18 +4,18 @@ import sys
 def summation(lines: str) -> int:
     length: str
     sum = 0
-    index = 1
+    index = 0
    
     for line in lines:
         # translate to int values
         value = int(line)
-        
+        print(value)
         if(value == -999):
             break
         
         else:
             if(value > 0):
-                sum += line
+                sum += value
                 index += 1
     if(sum == 0):
         return 'EMPTY'
@@ -31,6 +31,7 @@ if __name__ == "__main__":
 
     # Open the file and read in its contents
     with open(filename) as data_file:
+        number_of_lines = data_file.readline()
         lines = data_file.readlines()
 
     # Actually do the work
