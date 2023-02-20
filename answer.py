@@ -10,10 +10,11 @@ def summation(lines: str) -> int:
         #stops when encounter -999
         if(value == -999):
             break
+        #ignores negative numbers
         if(value < 0):
             continue
+        #summates
         else:
-            #if(value > 0): #only adds to sum if positive value
             sum += value
 
     if(sum == 0): #returns empty if there are no values
