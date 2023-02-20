@@ -2,10 +2,8 @@ import fileinput
 import sys
 
 def summation(lines: str) -> int:
-    length: str
     sum = 0
-    index = 0
-   
+
     for line in lines:
         # translate to int values
         value = int(line)
@@ -15,7 +13,7 @@ def summation(lines: str) -> int:
         else:
             if(value > 0): #only adds to sum if positive value
                 sum += value
-                index += 1
+
     if(sum == 0): #returns empty if there are no values
         return 'EMPTY'
     
