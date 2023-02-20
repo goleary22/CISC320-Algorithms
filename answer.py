@@ -9,10 +9,8 @@ def summation(lines: str) -> int:
     for line in lines:
         # translate to int values
         value = int(line)
-        print(value)
         if(value == -999):
             break
-        
         else:
             if(value > 0):
                 sum += value
@@ -31,7 +29,7 @@ if __name__ == "__main__":
 
     # Open the file and read in its contents
     with open(filename) as data_file:
-        number_of_lines = data_file.readline()
+        number_of_lines = data_file.readline() #read first line- quantity
         lines = data_file.readlines()
 
     # Actually do the work
