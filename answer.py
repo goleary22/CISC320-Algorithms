@@ -7,7 +7,7 @@ def summation(lines: str) -> int:
     index = 1
    
     for line in lines:
-        # Readlines includes the newline character
+        # translate to int values
         value = int(line)
         
         if(value == -999):
@@ -23,10 +23,11 @@ def summation(lines: str) -> int:
 
     return sum
 
-    
+
 if __name__ == "__main__":
     # Get the filename from stdin
     filename = input()
+    print(filename)
 
     # Open the file and read in its contents
     with open(filename) as data_file:
